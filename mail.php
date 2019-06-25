@@ -1,9 +1,9 @@
 <?php
-    $to = 'demo@spondonit.com';
-    $firstname = $_POST["fname"];
+if(isset($_POST['send_message_btn'])){
+    $to = 'valeberroc@gmail.com';
+    $name = $_POST["name"];
     $email= $_POST["email"];
     $text= $_POST["message"];
-    $phone= $_POST["phone"];
     
 
 
@@ -11,21 +11,21 @@
     $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-    $message ='<table style="width:100%">
-        <tr>
-            <td>'.$firstname.'  '.$laststname.'</td>
-        </tr>
-        <tr><td>Email: '.$email.'</td></tr>
-        <tr><td>phone: '.$phone.'</td></tr>
-        <tr><td>Text: '.$text.'</td></tr>
-        
-    </table>';
-
+    $message = "<html>
+    <head>
+        <title>New message from website contact form</title>
+    </head>
+    <body>
+        <p>".$email."</p>
+        <h1>" . $subject . "</h1>
+        <p>".$msg."</p>
+    </body>
+    </html>";
     if (@mail($to, $email, $message, $headers))
     {
         echo 'The message has been sent.';
     }else{
         echo 'failed';
     }
-
+}
 ?>
