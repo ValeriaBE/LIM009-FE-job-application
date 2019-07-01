@@ -51,6 +51,9 @@
   font-weight: 300;
 }
 
+.italic{
+  font-weight:500;
+}
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
@@ -2263,6 +2266,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 25px;
   font-weight: 400;
 }
+.pl-25{
+padding-left: 25%;
+}
 
 .myself-wrap .desc .talk-btn:hover {
   background: transparent;
@@ -2661,6 +2667,18 @@ h6 {
 .pr-20{
   padding-right: 20px;
 }
+.pr-10{
+  padding-right: 10px;
+}
+.black{
+  color: #000;
+}
+.right{
+  text-align: left
+}
+.ml-90{
+  margin-left: 27%;
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .left{
     margin-left: 70px;
@@ -2682,6 +2700,9 @@ h6 {
 }
 .pb-70 {
   padding-bottom: 30px;
+}
+.ml-90{
+  margin-left: 10%;
 }
   }
   @media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
