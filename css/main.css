@@ -10,12 +10,12 @@
 
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: #17a2b8;
+  background-color: #ffffff;
   color: #fff;
 }
 
 ::selection {
-  background-color: #17a2b8;
+  background-color: #ffffff;
   color: #fff;
 }
 
@@ -572,7 +572,7 @@ td, th {
 }
 
 .text-white {
-  color: #fff;
+  color: rgb(247, 201, 0);
 }
 
 .text-black {
@@ -932,14 +932,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .genric-btn.primary-border {
-  color: #17a2b8;
-  border: 1px solid #17a2b8;
+  color: #f7c900;
+  border: 1px solid #f7c900;
   background: #fff;
 }
 
 .genric-btn.primary-border:hover {
   color: #fff;
-  background: #17a2b8;
+  background: #f7c900;
   border: 1px solid transparent;
 }
 
@@ -1199,7 +1199,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 14px;
   height: 14px;
-  border: 3px solid #17a2b8;
+  border: 3px solid #f7c900;
   background: #fff;
   top: 4px;
   left: 0;
@@ -1875,7 +1875,9 @@ h1, h2, h3, h4, h5, h6 {
 .form-select .nice-select::after {
   right: 20px;
 }
-
+.fit{
+  height: fit-content;
+}
 @media (max-width: 992px) {
   .navbar-nav {
     height: auto;
@@ -1919,7 +1921,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav a {
   text-transform: uppercase;
   font-weight: 600;
-  color: #fff;
+  color: #f7c900;
   padding: 20px;
 }
 
@@ -1961,17 +1963,21 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
-
-.p1-gradient-bg, .primary-btn, .primary-btn2:hover, .default-header, .dropdown-menu, .banner-area, .myself-wrap .desc .talk-btn, .skillbar-bar, .single-feature:hover, .single-footer-widget .click-btn, .generic-banner {
-  background-image: -moz-linear-gradient(0deg, #17a2b8 0%, #17a2b8 100%);
-  background-image: -webkit-linear-gradient(0deg, #17a2b8 0%, #17a2b8 100%);
-  background-image: -ms-linear-gradient(0deg, #17a2b8 0%, #17a2b8 100%);
+.skillbar-bar, .myself-wrap .desc .talk-btn,.single-feature:hover, .primary-btn{
+  background-image: -moz-linear-gradient(0deg, #f7c900 0%, #f7c900 100%);
+  background-image: -webkit-linear-gradient(0deg, #f7c900 0%, #f7c900 100%);
+  background-image: -ms-linear-gradient(0deg, #f7c900 0%, #f7c900 100%);
+}
+.p1-gradient-bg, .primary-btn2:hover, .default-header, .dropdown-menu, .banner-area, .single-footer-widget .click-btn, .generic-banner {
+  background-image: -moz-linear-gradient(0deg, #f8f9fa 0%, #f8f9fa 100%);
+  background-image: -webkit-linear-gradient(0deg, #f8f9fa 0%, #f8f9fa 100%);
+  background-image: -ms-linear-gradient(0deg, #f8f9fa 0%, #f8f9fa 100%);
 }
 
 .p1-gradient-color, .single-service a:hover, .footer-social a:hover i, .single-footer-widget .bb-btn {
-  background: -moz-linear-gradient(0deg, #17a2b8 0%, #17a2b8 100%);
-  background: -webkit-linear-gradient(0deg, #17a2b8 0%, #17a2b8 100%);
-  background: -ms-linear-gradient(0deg, #17a2b8 0%, #17a2b8 100%);
+  background: -moz-linear-gradient(0deg, #f8f9fa 0%, #f8f9fa 100%);
+  background: -webkit-linear-gradient(0deg, #f8f9fa 0%, #f8f9fa 100%);
+  background: -ms-linear-gradient(0deg, #f8f9fa 0%, #f8f9fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2237,7 +2243,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-area {
-  background-color: #f9f9ff;
+  background-color: #f8f9fa;
 }
 
 .myself-wrap {
@@ -2353,7 +2359,7 @@ padding-left: 25%;
 }
 
 .project-area {
-  background-color: #f9f9ff;
+  background-color: #f8f9fa;
 }
 
 .single-project a {
@@ -2381,7 +2387,7 @@ padding-left: 25%;
 }
 
 .single-feature {
-  background-color: #f9f9ff;
+  background-color: #f8f9fa;
   padding: 30px 30px 15px 30px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
